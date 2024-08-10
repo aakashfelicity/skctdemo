@@ -1,0 +1,59 @@
+/* src/components/LatestNews/LatestNews.css - Dark Theme */
+
+.latest-news {
+    padding: 20px;
+    background-color: #1c1c1c; /* Dark background color */
+    color: #ffffff; /* Light text color */
+    font-family: Arial, sans-serif;
+}
+
+.latest-news h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #dddddd; /* Light grey for contrast */
+    border-bottom: 2px solid #333; /* Darker border */
+    padding-bottom: 10px;
+}
+
+.news-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.news-card {
+    background-color: #2c2c2c; /* Matching dark background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Darker shadow */
+    width: calc(33.333% - 20px); /* Adjust width for 3 items per row with gaps */
+    box-sizing: border-box;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.news-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Darker hover shadow */
+}
+
+.news-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #f4ce14; /* Use a color from the palette for the title */
+}
+
+.news-card p {
+    margin: 5px 0;
+    color: #aaaaaa; /* Light grey text */
+    font-size: 14px;
+}
+
+.news-tag {
+    display: inline-block;
+    background-color: #45474b; /* Dark grey background for tags */
+    color: #f5f7f8; /* Light text color for tags */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: 10px;
+}

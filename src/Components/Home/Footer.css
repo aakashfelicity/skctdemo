@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer {
+  background-color: #121212;
+  color: #eaeaea;
+  padding: 20px 0;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer-top-bar {
+  background: linear-gradient(to right, #00c497, #f4ce14, #ff6b6b);
+  height: 10px;
+  animation: slideIn 1s ease-out;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 20px;
+  min-width: 200px;
+}
+
+.footer-logo {
+  width: 150px;
+  height: auto;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  color: #f4ce14;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-section ul li a {
+  color: #eaeaea;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: #f4ce14;
+}
+
+.footer-section .social-icons a {
+  margin: 0 10px;
+  color: #eaeaea;
+  font-size: 1.5em;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.footer-section .social-icons a:hover {
+  transform: scale(1.2);
+  color: #f4ce14;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding: 10px 0;
+  font-size: 0.8em;
+  color: #666;
+  animation: fadeInUp 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin: 20px 0;
+  }
+
+  .footer-section h4, .footer-section ul, .footer-section .social-icons {
+    text-align: center;
+  }
+}
